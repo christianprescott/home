@@ -19,6 +19,7 @@ function parse_git_branch() {
 	fi
 }
 export PS1="\[\e[33m\]\`pretty_now\` \W \`parse_git_branch\`\[\e[m\]\\$ "
+export HISTSIZE=10000
 
 # Aliases
 alias be="bundle exec"
@@ -27,4 +28,3 @@ alias dcr="docker-compose run --rm"
 alias dps="docker ps --format \"table {{.Names}}\t{{.Status}}\t{{.Size}}\t{{.ID}}\" | sort"
 alias ppjson="python -m json.tool"
 alias lfr="less +F -R"
-
