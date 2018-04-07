@@ -1,0 +1,8 @@
+# OS files
+.DS_Store
+
+# Ignore RubyMine config files.
+/.idea
+
+.byebug_history
+
